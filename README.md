@@ -1,2 +1,2 @@
 # Sample_Work
-A colection of work I've done 
+A collection of work I've done 
