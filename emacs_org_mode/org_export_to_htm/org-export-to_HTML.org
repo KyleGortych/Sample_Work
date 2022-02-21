@@ -1,0 +1,75 @@
+#+TITLE: Org Export to HTML Example.
+#+DESCRIPTION: Converts Emacs Org file to HTML
+#+AUTHOR: Kyle Gortych
+# #+EXPORT_FILE_NAME: /kylegortych/Main\ Directory/Text\ Editors\ test\ languages/Doom_Emacs/org_export_to_HTML.html
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+# #+STYLE: <link rel="stylesheet" type="text/css" href="BLANK/stylesheet.css"/>
+# #+HTML_HEAD_EXTRA: <link rel="icon" href="wizard.png" type="image/png" />
+#+OPTIONS: num:nil
+
+[[file: my-user-icon.png]]
+https://github.com/KyleGortych
+
+* This is a Heading
+This is a paragraph for the first heading. In org mode it is converted to the appropriate tags. Org mode has lots of features. One of the features are snipits. Snippets are blocks of code in orgmode that allow one to run diffrent languages and even shells within one org document. This is usefull because, one org mode doc can essentially be included in a project with various languages and run them all interactively showing parts of the whole programs operation.
+
+* This is a List
++ one
++ two
++ three
+
+* Exporting
+To export use 'SPACE-m-e' then 'h for HTML' 'last type h or o'.
+
+* Examples of Snippets
+One enables a snippet within an org doc by using...
++ Space-i-s or...
++ <s tab completion general snippet
++ #+begin-underscore-src language-name :exports both
++ #+end-underscore-src
++ C-c C-c runs
+
+** Python example
+
+#+begin_src python :exports both
+def foo(x):
+    if x>0:
+        return x+1
+    else:
+        return x-1
+
+return foo(5)
+#+end_src
+
+#+RESULTS:
+: 6
+
+** Rust example
+This required a workaround. What was used, was a shell snippet. If a file can't export a result along with the src, then running it in a shell snippet and exporting the result works as well. You can choose whether to include the shell snippet commands using :exports both or :exports results respectively.
+
+#+begin_src rust
+fn main() {
+    println!("pi value is {}", get_pi());
+}
+
+fn get_pi() -> f64 {
+    22.0 / 7.0
+}
+#+end_src
+
+#+begin_src sh :exports results
+cd /Users/kylegortych/Main\ Directory/Text\ Editors\ test\ languages/Vim/Language\ tests/rust/print_pi
+cargo run src/main.rs
+#+end_src
+
+#+RESULTS:
+: pi value is 3.142857142857143
+
+* References
++ https://www.youtube.com/watch?v=K6S-AKm5snc&t=141s
++ https://orgmode.org/
++ https://orgmode.org/manual/Exporting-Code-Blocks.html
++ https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html
++ https://emacsclub.github.io/html/org_tutorial.html#sec-6-1
++ https://www.flaticon.com/free-icons/wizard
++ https://distro.tube/index.html
