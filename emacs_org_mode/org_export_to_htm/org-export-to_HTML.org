@@ -1,27 +1,30 @@
 #+TITLE: Org Export to HTML Example.
 #+DESCRIPTION: Converts Emacs Org file to HTML
 #+AUTHOR: Kyle Gortych
-# #+EXPORT_FILE_NAME: /kylegortych/Main\ Directory/Text\ Editors\ test\ languages/Doom_Emacs/org_export_to_HTML.html
+# #+EXPORT_FILE_NAME: for difrent dir path
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 # #+STYLE: <link rel="stylesheet" type="text/css" href="BLANK/stylesheet.css"/>
-# #+HTML_HEAD_EXTRA: <link rel="icon" href="wizard.png" type="image/png" />
+#+HTML_HEAD: <link rel="icon" href="wizard.png" type="image/png" />
 #+OPTIONS: num:nil
 
 [[file: my-user-icon.png]]
-https://github.com/KyleGortych
 
-* This is a Heading
+#+BEGIN_CENTER
+@@html:<a href="https://github.com/KyleGortych" target="_blank">Author</a>@@
+#+END_CENTER
+
+* Org Export
 This is a paragraph for the first heading. In org mode it is converted to the appropriate tags. Org mode has lots of features. One of the features are snipits. Snippets are blocks of code in orgmode that allow one to run diffrent languages and even shells within one org document. This is usefull because, one org mode doc can essentially be included in a project with various languages and run them all interactively showing parts of the whole programs operation.
 
-* This is a List
+** This is a List
 + one
 + two
 + three
 
-* Exporting
+** Exporting
 To export use 'SPACE-m-e' then 'h for HTML' 'last type h or o'.
 
-* Examples of Snippets
+** Examples of Snippets
 One enables a snippet within an org doc by using...
 + Space-i-s or...
 + <s tab completion general snippet
@@ -45,9 +48,9 @@ return foo(5)
 : 6
 
 ** Rust example
-This required a workaround. What was used, was a shell snippet. If a file can't export a result along with the src, then running it in a shell snippet and exporting the result works as well. You can choose whether to include the shell snippet commands using :exports both or :exports results respectively.
+This required a workaround. What was used, was a shell snippet. If a file can't export a result along with the src, then running it in a shell snippet and exporting the result works as well. You can choose whether to include the shell snippet commands using :exports both or :exports results respectively. However compiled language sinpits should export results in the usual manner. I believe what is happening is that emacs is using _.
 
-#+begin_src rust
+#+begin_src rust :exports both
 fn main() {
     println!("pi value is {}", get_pi());
 }
@@ -57,7 +60,10 @@ fn get_pi() -> f64 {
 }
 #+end_src
 
-#+begin_src sh :exports results
+#+RESULTS:
+: pi value is 3.142857142857143
+
+#+begin_src sh :exports both
 cd /Users/kylegortych/Main\ Directory/Text\ Editors\ test\ languages/Vim/Language\ tests/rust/print_pi
 cargo run src/main.rs
 #+end_src
@@ -65,11 +71,14 @@ cargo run src/main.rs
 #+RESULTS:
 : pi value is 3.142857142857143
 
-* References
-+ https://www.youtube.com/watch?v=K6S-AKm5snc&t=141s
-+ https://orgmode.org/
-+ https://orgmode.org/manual/Exporting-Code-Blocks.html
-+ https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html
-+ https://emacsclub.github.io/html/org_tutorial.html#sec-6-1
-+ https://www.flaticon.com/free-icons/wizard
-+ https://distro.tube/index.html
+# html_head: <base target="_blank"> messes with toc
+
+** References
+- @@html:<a href="https://www.youtube.com/watch?v=K6S-AKm5snc&t=141s" target="_blank">DT youtube ref</a>@@
+- @@html:<a href="https://orgmode.org/" target="_blank">orgmode.org</a>@@
+- @@html:<a href="https://orgmode.org/manual/Exporting-Code-Blocks.html" target="_blank">org export code blocks</a>@@
+- @@html:<a href="https://stackoverflow.com/questions/14217908/org-mode-export-to-html-links-open-in-new-tabs" target="_blank">escape sequenes for html links in org mode</a>@@
+- @@html:<a href="https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html" target="_blank">org export turorial</a>@@
+- @@html:<a href="https://emacsclub.github.io/html/org_tutorial.html#sec-6-1" target="_blank">org tutorial</a>@@
+- @@html:<a href="https://www.flaticon.com/free-icons/wizard" target="_blank">icon img</a>@@
+- @@html:<a href="https://distro.tube/index.html" target="_blank">distro.tube</a>@@

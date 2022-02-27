@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-02-21 Mon 16:26 -->
+<!-- 2022-02-27 Sun 17:06 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Org Export to HTML Example.</title>
@@ -196,11 +196,11 @@
 </style>
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
-<link rel="icon" href="wizard.png" type="image/png" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<link rel="icon" href="wizard.png" type="image/png" />
 </head>
 <body>
 <div id="content" class="content">
@@ -209,36 +209,42 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org3fcfb61">This is a Heading</a></li>
-<li><a href="#org47b41b8">This is a List</a></li>
-<li><a href="#org4730b7d">Exporting</a></li>
-<li><a href="#org7dc0d3f">Examples of Snippets</a>
+<li><a href="#orgc769d8d">Org Export</a>
 <ul>
-<li><a href="#org29c4a88">Python example</a></li>
-<li><a href="#orgf46f8fc">Rust example</a></li>
+<li><a href="#orgc39b5a9">This is a List</a></li>
+<li><a href="#org6bbd5a9">Exporting</a></li>
+<li><a href="#org54ec7ce">Examples of Snippets</a></li>
+<li><a href="#org69b6816">Python example</a></li>
+<li><a href="#org35ea7cc">Rust example</a></li>
+<li><a href="#org8090df2">References</a></li>
 </ul>
 </li>
-<li><a href="#org36333ff">References</a></li>
 </ul>
 </div>
 </div>
-<p>
-<img src=" my-user-icon.png" alt=" my-user-icon.png" />
-<a href="https://github.com/KyleGortych">https://github.com/KyleGortych</a>
-</p>
 
-<div id="outline-container-org3fcfb61" class="outline-2">
-<h2 id="org3fcfb61">This is a Heading</h2>
-<div class="outline-text-2" id="text-org3fcfb61">
+<div id="org51538b4" class="figure">
+<p><img src=" my-user-icon.png" alt=" my-user-icon.png" />
+</p>
+</div>
+
+<div class="org-center">
+<p>
+<a href="https://github.com/KyleGortych" target="_blank">Author</a>
+</p>
+</div>
+
+<div id="outline-container-orgc769d8d" class="outline-2">
+<h2 id="orgc769d8d">Org Export</h2>
+<div class="outline-text-2" id="text-orgc769d8d">
 <p>
 This is a paragraph for the first heading. In org mode it is converted to the appropriate tags. Org mode has lots of features. One of the features are snipits. Snippets are blocks of code in orgmode that allow one to run diffrent languages and even shells within one org document. This is usefull because, one org mode doc can essentially be included in a project with various languages and run them all interactively showing parts of the whole programs operation.
 </p>
 </div>
-</div>
 
-<div id="outline-container-org47b41b8" class="outline-2">
-<h2 id="org47b41b8">This is a List</h2>
-<div class="outline-text-2" id="text-org47b41b8">
+<div id="outline-container-orgc39b5a9" class="outline-3">
+<h3 id="orgc39b5a9">This is a List</h3>
+<div class="outline-text-3" id="text-orgc39b5a9">
 <ul class="org-ul">
 <li>one</li>
 <li>two</li>
@@ -247,18 +253,18 @@ This is a paragraph for the first heading. In org mode it is converted to the ap
 </div>
 </div>
 
-<div id="outline-container-org4730b7d" class="outline-2">
-<h2 id="org4730b7d">Exporting</h2>
-<div class="outline-text-2" id="text-org4730b7d">
+<div id="outline-container-org6bbd5a9" class="outline-3">
+<h3 id="org6bbd5a9">Exporting</h3>
+<div class="outline-text-3" id="text-org6bbd5a9">
 <p>
 To export use &rsquo;SPACE-m-e&rsquo; then &rsquo;h for HTML&rsquo; &rsquo;last type h or o&rsquo;.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org7dc0d3f" class="outline-2">
-<h2 id="org7dc0d3f">Examples of Snippets</h2>
-<div class="outline-text-2" id="text-org7dc0d3f">
+<div id="outline-container-org54ec7ce" class="outline-3">
+<h3 id="org54ec7ce">Examples of Snippets</h3>
+<div class="outline-text-3" id="text-org54ec7ce">
 <p>
 One enables a snippet within an org doc by using&#x2026;
 </p>
@@ -270,10 +276,11 @@ One enables a snippet within an org doc by using&#x2026;
 <li>C-c C-c runs</li>
 </ul>
 </div>
+</div>
 
-<div id="outline-container-org29c4a88" class="outline-3">
-<h3 id="org29c4a88">Python example</h3>
-<div class="outline-text-3" id="text-org29c4a88">
+<div id="outline-container-org69b6816" class="outline-3">
+<h3 id="org69b6816">Python example</h3>
+<div class="outline-text-3" id="text-org69b6816">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #51afef;">def</span> <span style="color: #c678dd;">foo</span>(x):
     <span style="color: #51afef;">if</span> x&gt;<span style="color: #da8548; font-weight: bold;">0</span>:
@@ -291,11 +298,11 @@ One enables a snippet within an org doc by using&#x2026;
 </div>
 </div>
 
-<div id="outline-container-orgf46f8fc" class="outline-3">
-<h3 id="orgf46f8fc">Rust example</h3>
-<div class="outline-text-3" id="text-orgf46f8fc">
+<div id="outline-container-org35ea7cc" class="outline-3">
+<h3 id="org35ea7cc">Rust example</h3>
+<div class="outline-text-3" id="text-org35ea7cc">
 <p>
-This required a workaround. What was used, was a shell snippet. If a file can&rsquo;t export a result along with the src, then running it in a shell snippet and exporting the result works as well. You can choose whether to include the shell snippet commands using :exports both or :exports results respectively.
+This required a workaround. What was used, was a shell snippet. If a file can&rsquo;t export a result along with the src, then running it in a shell snippet and exporting the result works as well. You can choose whether to include the shell snippet commands using :exports both or :exports results respectively. However compiled language sinpits should export results in the usual manner. I believe what is happening is that emacs is using _.
 </p>
 
 <div class="org-src-container">
@@ -310,31 +317,42 @@ This required a workaround. What was used, was a shell snippet. If a file can&rs
 </div>
 
 <pre class="example">
+cargolhkICS
+</pre>
+
+
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #ECBE7B;">cd</span> /Users/kylegortych/Main<span style="color: #98be65;">\ </span>Directory/Text<span style="color: #98be65;">\ </span>Editors<span style="color: #98be65;">\ </span>test<span style="color: #98be65;">\ </span>languages/Vim/Language<span style="color: #98be65;">\ </span>tests/rust/print_pi
+cargo run src/main.rs
+</pre>
+</div>
+
+<pre class="example">
 pi value is 3.142857142857143
 </pre>
 </div>
 </div>
-</div>
 
-<div id="outline-container-org36333ff" class="outline-2">
-<h2 id="org36333ff">References</h2>
-<div class="outline-text-2" id="text-org36333ff">
+<div id="outline-container-org8090df2" class="outline-3">
+<h3 id="org8090df2">References</h3>
+<div class="outline-text-3" id="text-org8090df2">
 <ul class="org-ul">
-<a href="https://www.flaticon.com/free-icons/wizard" title="wizard icons">Wizard icons created by Freepik - Flaticon</a>
-<li><a href="https://www.youtube.com/watch?v=K6S-AKm5snc&amp;t=141s">https://www.youtube.com/watch?v=K6S-AKm5snc&amp;t=141s</a></li>
-<li><a href="https://orgmode.org/">https://orgmode.org/</a></li>
-<li><a href="https://orgmode.org/manual/Exporting-Code-Blocks.html">https://orgmode.org/manual/Exporting-Code-Blocks.html</a></li>
-<li><a href="https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html">https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html</a></li>
-<li><a href="https://emacsclub.github.io/html/org_tutorial.html#sec-6-1">https://emacsclub.github.io/html/org_tutorial.html#sec-6-1</a></li>
-<li><a href="https://www.flaticon.com/free-icons/wizard">https://www.flaticon.com/free-icons/wizard</a></li>
-<li><a href="https://distro.tube/index.html">https://distro.tube/index.html</a></li>
+<li><a href="https://www.youtube.com/watch?v=K6S-AKm5snc&t=141s" target="_blank">DT youtube ref</a></li>
+<li><a href="https://orgmode.org/" target="_blank">orgmode.org</a></li>
+<li><a href="https://orgmode.org/manual/Exporting-Code-Blocks.html" target="_blank">org export code blocks</a></li>
+<li><a href="https://stackoverflow.com/questions/14217908/org-mode-export-to-html-links-open-in-new-tabs" target="_blank">escape sequenes for html links in org mode</a></li>
+<li><a href="https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html" target="_blank">org export turorial</a></li>
+<li><a href="https://emacsclub.github.io/html/org_tutorial.html#sec-6-1" target="_blank">org tutorial</a></li>
+<li><a href="https://www.flaticon.com/free-icons/wizard" target="_blank">icon img</a></li>
+<li><a href="https://distro.tube/index.html" target="_blank">distro.tube</a></li>
 </ul>
+</div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Kyle Gortych</p>
-<p class="date">Created: 2022-02-21 Mon 16:26</p>
+<p class="date">Created: 2022-02-27 Sun 17:06</p>
 </div>
 </body>
 </html>
