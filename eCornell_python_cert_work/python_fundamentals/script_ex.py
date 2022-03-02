@@ -1,5 +1,5 @@
 """
-A simple die roller
+A script of a simple die roller
 
 Author: Kyle Gortych
 Date: 2/23/2021
