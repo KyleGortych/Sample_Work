@@ -47,10 +47,11 @@ return foo(5)
 #+RESULTS:
 : 6
 
-** Rust example
-This required a workaround. What was used, was a shell snippet. If a file can't export a result along with the src, then running it in a shell snippet and exporting the result works as well. You can choose whether to include the shell snippet commands using :exports both or :exports results respectively. However compiled language sinpits should export results in the usual manner. I believe what is happening is that emacs is using _.
 
-#+begin_src rust :exports both
+** Rust example
+This required a workaround. What was used, was a shell snippet to run another file. If a code snippet can't export a result due to lsp dependency along with the src, then running it in a shell snippet and exporting the result works as well. You can choose whether to include the shell snippet commands using :exports both or :exports results respectively. However compiled language snippets should export results in the usual manner. What might be happening is as it's exported, the snippet's lsp isn't added to the html.
+
+#+begin_src rust
 fn main() {
     println!("pi value is {}", get_pi());
 }
@@ -63,7 +64,8 @@ fn get_pi() -> f64 {
 #+RESULTS:
 : pi value is 3.142857142857143
 
-#+begin_src sh :exports both
+
+#+begin_src sh :exports results
 cd /Users/kylegortych/Main\ Directory/Text\ Editors\ test\ languages/Vim/Language\ tests/rust/print_pi
 cargo run src/main.rs
 #+end_src
