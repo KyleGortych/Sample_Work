@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-03-22 Tue 15:57 -->
+<!-- 2022-03-31 Thu 20:32 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Org Export to HTML Example.</title>
@@ -192,7 +192,7 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
+  .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
@@ -209,42 +209,43 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org0c892a8">Org Export</a>
+<li><a href="#orgd5a9c67">Org Export</a>
 <ul>
-<li><a href="#org6f8a3f6">This is a List</a></li>
-<li><a href="#orgeb8ea36">Exporting</a></li>
-<li><a href="#org10e09bd">Examples of Snippets</a></li>
-<li><a href="#org04825b3">Python example</a></li>
-<li><a href="#org8f346ab">Rust example</a></li>
-<li><a href="#orgea6592f">References</a></li>
+<li><a href="#orgb1e9e56">This is a List</a></li>
+<li><a href="#org8fe6a13">Exporting</a></li>
+<li><a href="#org686ddd2">Examples of Snippets</a></li>
+<li><a href="#orgb8a3ab1">Python example</a></li>
+<li><a href="#org6d97527">Rust example</a></li>
+<li><a href="#org52598aa">Exporting references</a></li>
+<li><a href="#org56ba545">References</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="org489b604" class="figure">
+<div id="org3f406b2" class="figure">
 <p><img src=" my-user-icon.png" alt=" my-user-icon.png" />
 </p>
 </div>
 
 <div class="org-center">
-<p>
+<p target="_blank">
 <a href="https://github.com/KyleGortych" target="_blank">Author</a>
 </p>
 </div>
 
-<div id="outline-container-org0c892a8" class="outline-2">
-<h2 id="org0c892a8">Org Export</h2>
-<div class="outline-text-2" id="text-org0c892a8">
+<div id="outline-container-orgd5a9c67" class="outline-2">
+<h2 id="orgd5a9c67">Org Export</h2>
+<div class="outline-text-2" id="text-orgd5a9c67">
 <p>
 This is a paragraph for the first heading. In org mode it is converted to the appropriate tags. Org mode has lots of features. One of the features are snipits. Snippets are blocks of code in orgmode that allow one to run diffrent languages and even shells within one org document. This is usefull because, one org mode doc can essentially be included in a project with various languages and run them all interactively showing parts of the whole programs operation.
 </p>
 </div>
 
-<div id="outline-container-org6f8a3f6" class="outline-3">
-<h3 id="org6f8a3f6">This is a List</h3>
-<div class="outline-text-3" id="text-org6f8a3f6">
+<div id="outline-container-orgb1e9e56" class="outline-3">
+<h3 id="orgb1e9e56">This is a List</h3>
+<div class="outline-text-3" id="text-orgb1e9e56">
 <ul class="org-ul">
 <li>one</li>
 <li>two</li>
@@ -253,18 +254,18 @@ This is a paragraph for the first heading. In org mode it is converted to the ap
 </div>
 </div>
 
-<div id="outline-container-orgeb8ea36" class="outline-3">
-<h3 id="orgeb8ea36">Exporting</h3>
-<div class="outline-text-3" id="text-orgeb8ea36">
+<div id="outline-container-org8fe6a13" class="outline-3">
+<h3 id="org8fe6a13">Exporting</h3>
+<div class="outline-text-3" id="text-org8fe6a13">
 <p>
 To export use &rsquo;SPACE-m-e&rsquo; then &rsquo;h for HTML&rsquo; &rsquo;last type h or o&rsquo;.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org10e09bd" class="outline-3">
-<h3 id="org10e09bd">Examples of Snippets</h3>
-<div class="outline-text-3" id="text-org10e09bd">
+<div id="outline-container-org686ddd2" class="outline-3">
+<h3 id="org686ddd2">Examples of Snippets</h3>
+<div class="outline-text-3" id="text-org686ddd2">
 <p>
 One enables a snippet within an org doc by using&#x2026;
 </p>
@@ -278,17 +279,17 @@ One enables a snippet within an org doc by using&#x2026;
 </div>
 </div>
 
-<div id="outline-container-org04825b3" class="outline-3">
-<h3 id="org04825b3">Python example</h3>
-<div class="outline-text-3" id="text-org04825b3">
+<div id="outline-container-orgb8a3ab1" class="outline-3">
+<h3 id="orgb8a3ab1">Python example</h3>
+<div class="outline-text-3" id="text-orgb8a3ab1">
 <div class="org-src-container">
-<pre class="src src-python"><span style="color: #51afef;">def</span> <span style="color: #c678dd;">foo</span>(x):
-    <span style="color: #51afef;">if</span> x&gt;<span style="color: #da8548; font-weight: bold;">0</span>:
-        <span style="color: #51afef;">return</span> x+<span style="color: #da8548; font-weight: bold;">1</span>
-    <span style="color: #51afef;">else</span>:
-        <span style="color: #51afef;">return</span> x-<span style="color: #da8548; font-weight: bold;">1</span>
+<pre class="src src-python"><span style="color: #007bb3; font-weight: bold;">def</span> <span style="color: #622f7d; font-weight: bold;">foo</span>(x):
+    <span style="color: #007bb3; font-weight: bold;">if</span> x&gt;<span style="color: #00d1e0;">0</span>:
+        <span style="color: #007bb3; font-weight: bold;">return</span> x+<span style="color: #00d1e0;">1</span>
+    <span style="color: #007bb3; font-weight: bold;">else</span>:
+        <span style="color: #007bb3; font-weight: bold;">return</span> x-<span style="color: #00d1e0;">1</span>
 
-<span style="color: #51afef;">return</span> foo(<span style="color: #da8548; font-weight: bold;">5</span>)
+<span style="color: #007bb3; font-weight: bold;">return</span> foo(<span style="color: #00d1e0;">5</span>)
 </pre>
 </div>
 
@@ -299,24 +300,23 @@ One enables a snippet within an org doc by using&#x2026;
 </div>
 
 
-<div id="outline-container-org8f346ab" class="outline-3">
-<h3 id="org8f346ab">Rust example</h3>
-<div class="outline-text-3" id="text-org8f346ab">
+<div id="outline-container-org6d97527" class="outline-3">
+<h3 id="org6d97527">Rust example</h3>
+<div class="outline-text-3" id="text-org6d97527">
 <p>
 This required a workaround. What was used, was a shell snippet to run another file. If a code snippet can&rsquo;t export a result due to lsp dependency along with the src, then running it in a shell snippet and exporting the result works as well. You can choose whether to include the shell snippet commands using :exports both or :exports results respectively. However compiled language snippets should export results in the usual manner. What might be happening is as it&rsquo;s exported, the snippet&rsquo;s lsp isn&rsquo;t added to the html.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-rust"><span style="color: #51afef;">fn</span> <span style="color: #c678dd;">main</span>() {
-    <span style="color: #c678dd;">println!</span>(<span style="color: #98be65;">"pi value is </span><span style="color: #98be65; font-style: italic;">{}</span><span style="color: #98be65;">"</span>, get_pi());
+<pre class="src src-rust"><span style="color: #007bb3; font-weight: bold;">fn</span> <span style="color: #622f7d; font-weight: bold;">main</span>() {
+    <span style="color: #F52749;">println!</span>(<span style="color: #1D8B15;">"pi value is </span><span style="color: #1D8B15; font-style: italic;">{}</span><span style="color: #1D8B15;">"</span>, get_pi());
 }
 
-<span style="color: #51afef;">fn</span> <span style="color: #c678dd;">get_pi</span>() -&gt; <span style="color: #ECBE7B;">f64</span> {
-    <span style="color: #da8548; font-weight: bold;">22.0</span> / <span style="color: #da8548; font-weight: bold;">7.0</span>
+<span style="color: #007bb3; font-weight: bold;">fn</span> <span style="color: #622f7d; font-weight: bold;">get_pi</span>() -&gt; <span style="color: #eab700;">f64</span> {
+    <span style="color: #00d1e0;">22.0</span> / <span style="color: #00d1e0;">7.0</span>
 }
 </pre>
 </div>
-
 
 <pre class="example">
 pi value is 3.142857142857143
@@ -324,26 +324,71 @@ pi value is 3.142857142857143
 </div>
 </div>
 
-<div id="outline-container-orgea6592f" class="outline-3">
-<h3 id="orgea6592f">References</h3>
-<div class="outline-text-3" id="text-orgea6592f">
-<ul class="org-ul">
-<li><a href="https://www.youtube.com/watch?v=K6S-AKm5snc&t=141s" target="_blank">DT youtube ref</a></li>
-<li><a href="https://orgmode.org/" target="_blank">orgmode.org</a></li>
-<li><a href="https://orgmode.org/manual/Exporting-Code-Blocks.html" target="_blank">org export code blocks</a></li>
-<li><a href="https://stackoverflow.com/questions/14217908/org-mode-export-to-html-links-open-in-new-tabs" target="_blank">escape sequenes for html links in org mode</a></li>
-<li><a href="https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html" target="_blank">org export turorial</a></li>
-<li><a href="https://emacsclub.github.io/html/org_tutorial.html#sec-6-1" target="_blank">org tutorial</a></li>
-<li><a href="https://www.flaticon.com/free-icons/wizard" target="_blank">icon img</a></li>
-<li><a href="https://distro.tube/index.html" target="_blank">distro.tube</a></li>
-</ul>
+<div id="outline-container-org52598aa" class="outline-3">
+<h3 id="org52598aa">Exporting references</h3>
+<div class="outline-text-3" id="text-org52598aa">
+<p>
+The examples below will add spaces between each list or prevent opening link in a new tab which is undesirable.
+</p>
+
+<p>
+Note this is an org code block which means escape characters must be used. The comma is used before the hash and plus sign. To have a link as plain text in an org code block specific to org syntax, use a zero width char by typing C-x 8 enter then type zero width char, lastly hit enter again making sure the cursor is in the correct position.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-org"><span style="color: #484848;">#+html_head: &lt;base target="_blank"&gt;</span>
+
+<span style="color: #484848;">#+ATTR_HTML: :target _blank</span>
+<span style="font-weight: bold;">+</span> [[LINK]&#8203;[DESCRIPTION]]
+<span style="color: #484848;">#+ATTR_HTML: :target _blank</span>
+<span style="font-weight: bold;">+</span> [[LINK]&#8203;[DESCRIPTION]]
+
+<span style="font-weight: bold;">+</span> <span style="color: #484848;">@@</span><span style="font-weight: bold;">html:</span>&lt;p&gt;txt &lt;a href="url" target="_blank"&gt;link&lt;/a&gt;&lt;/p&gt;<span style="color: #484848;">@@</span>
+<span style="font-weight: bold;">+</span> <span style="color: #484848;">@@</span><span style="font-weight: bold;">html:</span>&lt;p&gt;txt &lt;a href="url" target="_blank"&gt;link&lt;/a&gt;&lt;/p&gt;<span style="color: #484848;">@@</span>
+
+<span style="color: #484848;">#+begin_src html</span>
+<span style="color: #d1d1d1;">&lt;</span><span style="color: #622f7d; font-weight: bold;">div</span><span style="color: #d1d1d1;">&gt;</span>
+<span style="color: #d1d1d1;">    &lt;</span><span style="color: #622f7d; font-weight: bold;">ul</span><span style="color: #d1d1d1;">&gt;</span>
+<span style="color: #d1d1d1;">        &lt;</span><span style="color: #622f7d; font-weight: bold;">li</span><span style="color: #d1d1d1;">&gt;&lt;</span><span style="color: #622f7d; font-weight: bold;">p</span><span style="color: #d1d1d1;">&gt;txt &lt;</span><span style="color: #622f7d; font-weight: bold;">a</span><span style="color: #d1d1d1;"> </span><span style="color: #e87400;">href</span><span style="color: #d1d1d1;">=</span><span style="color: #1D8B15;">"url"</span><span style="color: #d1d1d1;"> </span><span style="color: #e87400;">target</span><span style="color: #d1d1d1;">=</span><span style="color: #1D8B15;">"_blank"</span><span style="color: #d1d1d1;">&gt;link&lt;/</span><span style="color: #622f7d; font-weight: bold;">a</span><span style="color: #d1d1d1;">&gt;&lt;/</span><span style="color: #622f7d; font-weight: bold;">p</span><span style="color: #d1d1d1;">&gt;&lt;/</span><span style="color: #622f7d; font-weight: bold;">li</span><span style="color: #d1d1d1;">&gt;</span>
+<span style="color: #d1d1d1;">        &lt;</span><span style="color: #622f7d; font-weight: bold;">li</span><span style="color: #d1d1d1;">&gt;&lt;</span><span style="color: #622f7d; font-weight: bold;">p</span><span style="color: #d1d1d1;">&gt;txt &lt;</span><span style="color: #622f7d; font-weight: bold;">a</span><span style="color: #d1d1d1;"> </span><span style="color: #e87400;">href</span><span style="color: #d1d1d1;">=</span><span style="color: #1D8B15;">"url"</span><span style="color: #d1d1d1;"> </span><span style="color: #e87400;">target</span><span style="color: #d1d1d1;">=</span><span style="color: #1D8B15;">"_blank"</span><span style="color: #d1d1d1;">&gt;link&lt;/</span><span style="color: #622f7d; font-weight: bold;">a</span><span style="color: #d1d1d1;">&gt;&lt;/</span><span style="color: #622f7d; font-weight: bold;">p</span><span style="color: #d1d1d1;">&gt;&lt;/</span><span style="color: #622f7d; font-weight: bold;">li</span><span style="color: #d1d1d1;">&gt;</span>
+<span style="color: #d1d1d1;">    &lt;/</span><span style="color: #622f7d; font-weight: bold;">ul</span><span style="color: #d1d1d1;">&gt;</span>
+<span style="color: #d1d1d1;">&lt;/</span><span style="color: #622f7d; font-weight: bold;">div</span><span style="color: #d1d1d1;">&gt;</span>
+<span style="color: #484848;">#+end_src</span>
+</pre>
+</div>
+
+<p>
+Here is the appropriate format
+</p>
+<div class="org-src-container">
+<pre class="src src-html">
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org56ba545" class="outline-3">
+<h3 id="org56ba545">References</h3>
+<div class="outline-text-3" id="text-org56ba545">
+<div>
+    <ul>
+        <li><p>DT youtube ref <a href="https://www.youtube.com/watch?v=K6S-AKm5snc&t=141s " target="_blank">link</a></p></li>
+        <li><p>Orgmode website <a href="https://orgmode.org/" target="_blank">link</a></p></li>
+        <li><p>org export turorial <a href="https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html" target="_blank">link</a></p></li>
+        <li><p>org turorial <a href="https://emacsclub.github.io/html/org_tutorial.html#sec-6-1" target="_blank">link</a></p></li>
+        <li><p>distrotube's website <a href="https://distro.tube/index.html" target="_blank">link</a></p></li>
+        <li><p>org code block escape char for links <a href="https://orgmode.org/manual/Escape-Character.html" target="_blank">link</a></p></li>
+        <li><p>org export html <a href="https://orgmode.org/manual/Quoting-HTML-tags.html" target="_blank">link</a></p></li>
+        <li><p>Icon created by Freepik - Flaticon <a href="https://www.flaticon.com/free-icons/wizard" title="wizard icons" target="_blank">wizard icon</a></p></li>
+    </ul>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Kyle Gortych</p>
-<p class="date">Created: 2022-03-22 Tue 15:57</p>
+<p class="date">Created: 2022-03-31 Thu 20:32</p>
 </div>
 </body>
 </html>
