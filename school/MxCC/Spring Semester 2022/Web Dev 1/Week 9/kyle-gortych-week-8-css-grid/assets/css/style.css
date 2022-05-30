@@ -1,0 +1,205 @@
+/*
+  style
+
+  The css
+
+  File name:     style.css
+  Maintainer:    Kyle Gortych
+  Started:       04-23-2022 
+  Last Modified: 05-05-2022 
+*/
+
+* {
+  box-sizing: border-box;    
+}
+
+body {
+  margin: 0px;
+  background-color: #dcdcdc;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+main {
+  display: grid;
+  max-width: 1000px;
+  margin-inline: auto;
+  width: 100%;
+  /*background-color: #dcdcdc;*/
+}
+
+header {
+  background-color: #383838;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
+footer {
+  background-color: #383838;
+}
+
+section {
+
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.social-nav {
+  font-size: 20px;
+  justify-content: center;
+  padding-bottom: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-header a{
+  font-size: 15px;
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-footer a{
+  font-size: 15px;
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+.instagram {
+  color: #3f729b;
+}
+
+.toc-box {
+  background-color: white;
+  padding: 20px;
+}
+
+.toc {
+  display: grid;
+  text-align: center;
+  background-color: #dcdcdc;
+  border-radius: 10px;
+  width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.toc a {
+  font-size: 15px;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  border-bottom: 1px dotted gray;
+}
+
+.link-style {
+  color: #ff4500;
+  text-decoration: none;
+}
+
+/* To prevent header covering title when jumping */
+/* refrence: https://blog.driftking.tw/en/QuickFix/navbar-covers-heading-with-anchor-link/ */
+
+:root {
+  scroll-padding-top: 210px;
+}
+
+/* media queri | from defualt:mobile to desktop */
+
+@media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .social-nav {
+    font-size: 20px;
+    padding: 8px;
+    display: flex;
+    gap: 15px;
+  }
+
+  :root {
+    scroll-padding-top: 65px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+    header, footer {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+  
+  main {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+  }
+  
+  .toc-box {
+    grid-column-start: 2;
+    grid-column-end: -1;
+  }
+  
+  .toc {
+    margin: 50% auto 0;
+    position: sticky;
+    top: 50px;
+  }
+
+  body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
