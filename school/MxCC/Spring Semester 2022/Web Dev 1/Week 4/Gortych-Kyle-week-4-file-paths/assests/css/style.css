@@ -1,0 +1,68 @@
+/* See instructions on line 28. Do not edit CSS above line 25. */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper div {
+  background-position: center;
+  background-size: cover;
+  border: 1px solid #000;
+  height: 50vh;
+  width: 33.333%;
+}
+
+/* 
+1. RENAME THE PROJECT FOLDER TO "lastName-firstName-week-5-file-paths"
+2. Inspect this project folder and all of the files and folders within it.
+3. Add a background-image property to the six declaration blocks below.
+
+**** Additional Help ****
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-image
+The background-image for the declaration block with the css selector of, ".one" will be "1.png" which is located in the images-1 folder in the assets folder. See step 2 to determine the location for the rest of the images.
+The background-image for the declaration block with the css selector of, ".two" will be "2.png"
+The background-image for ".three" will be "3.png" and so on.
+
+This file (style.css) is in the ROOTFOLDER/assets/css folder.
+The ROOTFOLDER is the lastName-firstName-week-5-file-paths folder.
+To get back to the ROOTFOLDER you will need to go up two "folder levels".
+The text "../../" without the quotes will let you go one level up into the assets folder.
+The text "../../" without the quotes will let you go two levels up into the lastName-firstName-week-5-file-paths folder.
+
+To learn more about file paths, see the two links below.
+https://www.w3schools.com/html/html_filepaths.asp
+https://www.youtube.com/watch?v=EJ0xvY5wT5Q&ab_channel=DaniKrossing
+
+4. Once complete, check the webpage in a browser. All six numbers should be visible on the screen.
+5. Zip up the lastName-firstName-week-5-file-paths folder and submit this assignment onto BlackBoard.
+ */
+.one {
+    background-image: url("../../images-1/1.png")
+}
+.two {
+    background-image: url("../images-2/2.png")
+}
+.three {
+    background-image: url("./images-3/3.png")
+}
+.four {
+    background-image: url("./4.png")
+}
+.five {
+    background-image: url("../5.png")
+}
+.six {
+    background-image: url("../../6.png")
+}
