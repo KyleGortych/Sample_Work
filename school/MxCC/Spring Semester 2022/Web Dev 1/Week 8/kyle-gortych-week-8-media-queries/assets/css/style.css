@@ -1,0 +1,264 @@
+/* CSS Custom Variables Start */
+:root {
+  --winter-primary: #4f7aa5;
+  --spring-primary: #723660;
+  --summer-primary: #579453;
+  --autumn-primary: #bb733f;
+  --winter-light: #dce4ed;
+  --spring-light: #e3d7df;
+  --summer-light: #ddeadd;
+  --autumn-light: #f1e3d9;
+}
+.home {
+  --season-primary: #000;
+}
+.winter-page,
+.winter {
+  --season-primary: var(--winter-primary);
+  --season-light: var(--winter-light);
+}
+.spring-page,
+.spring {
+  --season-primary: var(--spring-primary);
+  --season-light: var(--spring-light);
+}
+.summer-page,
+.summer {
+  --season-primary: var(--summer-primary);
+  --season-light: var(--summer-light);
+}
+.autumn-page,
+.autumn {
+  --season-primary: var(--autumn-primary);
+  --season-light: var(--autumn-light);
+}
+::selection {
+  background-color: var(--season-primary);
+  color: #fff;
+}
+/* CSS Custom Variables End */
+/* CSS Restets Start */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+body {
+  margin: 0;
+}
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+/* Add Your CSS below this line. */
+
+main {
+  max-width: 1000px;
+  margin-inline: auto;
+  width: 100%;
+}
+
+header {
+  /*justify-content: ;*/
+  text-align: center;
+  background-color: var(--season-primary);
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+}
+
+header a {
+  padding: 10px 20px 10px 20px; 
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+}
+
+a:hover {
+  background-color: var(--season-light);
+  color: var(--season-primary);
+}
+
+a.home-nav:hover {
+  color: black;
+  background-color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: right;
+  text-align: right;
+  background-color: var(--season-primary);
+}
+
+footer nav {
+  display: flex;
+  flex-direction: column;
+}
+
+footer a {
+  padding: 10px 20px 10px 20px; 
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+section {
+  border: 2px solid;
+  border-color: var(--season-primary);
+  margin: 20px;
+}
+
+h1 {
+  font-size: 42px;
+  color: white;
+  text-align: center;
+  /*align-self: center;*/
+  /*padding-left: 50%;*/
+}
+
+h2 {
+  background-color: var(--season-primary);
+  text-align: center;
+  font-size: 32px;
+  color: var(--season-light);
+  padding: 20px;
+  margin: 0px;
+}
+
+.descript {
+  background-color: var(--season-light);
+  padding: 40px;
+}
+
+.text {
+  position: absolute;  
+  left: 50%;                       
+  top: 50%;                         
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  color: white;
+}
+
+/* big-hero section */
+.big-hero {
+  display: flex;
+  height: 100vh;
+  /*position: relative;*/
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/four-seasons-dark.jpg");
+}
+
+.winter-big-hero {
+  display: flex;
+  height: 100vh;
+  /*position: relative;*/
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/winter-dark.jpg");
+  background-size: cover;
+
+}
+
+.autumn-big-hero {
+  display: flex;
+  height: 100vh;
+  /*position: relative;*/
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/autumn-dark.jpg");
+  background-size: cover;
+}
+
+.spring-big-hero {
+  display: flex;
+  height: 100vh;
+  /*position: relative;*/
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/spring-dark.jpg");
+  background-size: cover;
+}
+
+.summer-big-hero {
+  display: flex;
+  height: 100vh;
+  /*position: relative;*/
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/summer-dark.jpg");
+  background-size: cover;
+}
+
+/* media queri | from defualt:mobile to desktop */
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 989px) {
+  /*main {*/
+    /*display: grid;*/
+    /*grid-template-columns: 60px 60px;*/
+    /*max-width: 1000px;*/
+    /*margin-inline: auto;*/
+    /*width: 100%;*/
+  /*}*/
+
+}
+
+@media screen and (min-width: 990px) {
+  header nav{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .content-wrapper {
+    display: flex;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .box {
+    display: flex;
+    border: 3px solid var(--season-primary);
+    margin: 30px;
+    justify-content: center;
+  }
+
+  .winter-box {
+    display: flex;
+    border: 3px solid var(--winter-primary);
+    margin: 30px;
+    justify-content: center;
+  }
+  
+  .autumn-box {
+    display: flex;
+    border: 3px solid var(--autumn-primary);
+    margin: 30px;
+    justify-content: center;
+  }
+  
+  .spring-box {
+    display: flex;
+    border: 3px solid var(--spring-primary);
+    margin: 30px;
+    justify-content: center;
+  }
+  
+  .summer-box {
+    display: flex;
+    border: 3px solid var(--summer-primary);
+    margin: 30px;
+    justify-content: center;
+  }
+
+}
