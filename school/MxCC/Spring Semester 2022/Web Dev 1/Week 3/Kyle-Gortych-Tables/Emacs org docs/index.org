@@ -1,0 +1,34 @@
+#+TITLE: Tables
+#+DESCRIPTION: Converts Emacs Org file to HTML
+#+AUTHOR: Kyle Gortych
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: num:nil
+
+# @@html:<a href="index.html" target="_self">Home</a>@@
+@@html:<a href="january.html" target="_self">January</a>@@
+@@html:<a href="february.html" target="_self">February</a>@@
+@@html:<a href="march.html" target="_self">March</a>@@
+@@html:<a href="april.html" target="_self">April</a>@@
+@@html:<a href="may.html" target="_self">May</a>@@
+@@html:<a href="june.html" target="_self">June</a>@@
+@@html:<a href="july.html" target="_self">July</a>@@
+@@html:<a href="august.html" target="_self">August</a>@@
+@@html:<a href="september.html" target="_self">September</a>@@
+@@html:<a href="october.html" target="_self">October</a>@@
+@@html:<a href="november.html" target="_self">November</a>@@
+@@html:<a href="december.html" target="_self">December</a>@@
+
+# org file tables in Emacs features tab jumping and resizing columns. Use SPC m b - to insert table header under current cursor line.
+
+| Holiday                      | Date                                                             |
+|------------------------------+------------------------------------------------------------------|
+| New Year's Day               | @@html:<a href="january.html" target="_self">January 1</a>@@     |
+| Martin Luther King, Jr. Day  | @@html:<a href="january.html" target="_self">January 20</a>@@    |
+| George Washington's Birthday | @@html:<a href="february.html" target="_self">February 17</a>@@  |
+| Memorial Day                 | @@html:<a href="may.html" target="_self">May 25</a>@@            |
+| Independence Day             | @@html:<a href="july.html" target="_self">July 4</a>@@           |
+| Labor Day                    | @@html:<a href="september.html" target="_self">September 7</a>@@ |
+| Columbus Day                 | @@html:<a href="october.html" target="_self">October 12</a>@@    |
+| Veterans Day                 | @@html:<a href="november.html" target="_self">November 11</a>@@  |
+| Thanksgiving                 | @@html:<a href="november.html" target="_self">November 26</a>@@  |
+| Christmas                    | @@html:<a href="december.html" target="_self">December 25</a>@@  |
