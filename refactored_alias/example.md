@@ -36,16 +36,16 @@ end
 <pre>
   Packages no Depens
   -------------------
-  pkg1 pkg1 pkg1
-  pkg2 pkg2 pkg2
-  pkg3 pkg3 pkg3
+  pkg1 pkg4 pkg7
+  pkg2 pkg5 pkg8
+  pkg3 pkg6 pkg9
 </pre>
 <pre>
   Casks
   ------
-  cask1 cask1 cask1
-  cask1 cask1 cask1
-  cask1 cask1 cask1
+  cask1 cask4 cask7
+  cask2 cask5 cask8
+  cask3 cask6 cask9
 </pre>
 <pre>
   Taps/3d Party
