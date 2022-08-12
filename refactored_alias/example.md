@@ -1,18 +1,17 @@
 # Refactored brew List Packages No Dependancies
 
-## Approximately a 300x Speedup
+## A Modest Speedup
 
-<img width="1000" alt="refactored aliase" src="https://user-images.githubusercontent.com/99693659/182916579-d014592f-f439-4945-816d-998d31f4b5ec.png">
+<img width="1000" alt="refactored aliase" src="https://raw.githubusercontent.com/KyleGortych/sample_work/main/refactored_alias/Refactored%20brew%20list.png">
 
 ## fish Shell Aliases
-Still working on removing redundancies
 
 <details>
 <summary>example</summary>
 
 ``` fish
 function brew-ls
-  sed -n "/Packages no Depens/,/*/p" ~/path/brew-pkgs.txt | column -t -s '|' | tr '*' ' '; sed -n "/Casks/,/*/p" ~/path/brew-pkgs.txt | column -t -s '|' | tr '*' ' '; sed -n "/Taps/,\$p" ~/path/brew-pkgs.txt | tr '*' ' '
+  cat ~/path/file
 end
 
 function brew-seach
@@ -20,16 +19,39 @@ function brew-seach
 end
 ```
 </details>
-  
-## Future Automated Refactoring
-Auto: Being worked on…
 
-## Manualy
+## Semi-Auto
 <details>
-<summary>Past & edit text file in vim ie copy from brew leaves past in vim then substitute args for parames for num and delimiter_type</summary>
+<summary>Past from brew-search ie. example alias, then visual select to edit text file. Lastly use command below while in visual mode.</summary>
   
 ``` vim
-:num1,num2 s/\s\+/delimiter_type/g
+:'<,'>!column -t
 ```
 
+</details>
+
+## result
+<details>
+<summary>example</summary>
+<pre>
+  Packages no Depens
+  -------------------
+  pkg1 pkg1 pkg1
+  pkg2 pkg2 pkg2
+  pkg3 pkg3 pkg3
+</pre>
+<pre>
+  Casks
+  ------
+  cask1 cask1 cask1
+  cask1 cask1 cask1
+  cask1 cask1 cask1
+</pre>
+<pre>
+  Taps/3d Party
+  --------------
+  name: num casks
+  /usr/local/Homebrew/Library/Taps/ (num files, num KB)
+  From: https://github.com/pkg-name
+</pre>
 </details>
