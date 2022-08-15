@@ -55,3 +55,14 @@ end
   From: https://github.com/pkg-name
 </pre>
 </details>
+
+## future work
+  <details>
+  <summary>benchmark aliases via fish shell</summary>
+  
+  ``` fish
+  function command_name
+    paste (time $argv[1]|psub) (time $argv[2]|psub)
+  end
+  ```
+  </details>
