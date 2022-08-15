@@ -11,7 +11,7 @@
 
 ``` fish
 function brew-ls
-  cat ~/path/file
+  sed -n '/Packages/,/pip/{/pip/!p;}' ~/.config/fish/Shell_Support/alias_script_support/build_sys.txt
 end
 
 function brew-seach
@@ -22,7 +22,7 @@ end
 
 ## Semi-Auto
 <details>
-<summary>Past from brew-search ie. example alias, then visual select to edit text file. Lastly use command below while in visual mode.</summary>
+<summary>Past from fish alias stdout. Lastly use command below while in visual mode in vim.</summary>
   
 ``` vim
 :'<,'>!column -t
@@ -34,25 +34,18 @@ end
 <details>
 <summary>example</summary>
 <pre>
-  Packages no Depens
-  -------------------
-  pkg1 pkg4 pkg7
-  pkg2 pkg5 pkg8
-  pkg3 pkg6 pkg9
+Packages no Depens   Casks
+-------------------  ------
+pkg1 pkg4 pkg7       cask1 cask4 cask7
+pkg2 pkg5 pkg8       cask2 cask5 cask8
+pkg3 pkg6 pkg9       cask3 cask6 cask9
 </pre>
 <pre>
-  Casks
-  ------
-  cask1 cask4 cask7
-  cask2 cask5 cask8
-  cask3 cask6 cask9
-</pre>
-<pre>
-  Taps/3d Party
-  --------------
-  name: num casks
-  /usr/local/Homebrew/Library/Taps/ (num files, num KB)
-  From: https://github.com/pkg-name
+Taps/3d Party
+--------------
+name: num casks
+/usr/local/Homebrew/Library/Taps/ (num files, num KB)
+From: https://github.com/pkg-name
 </pre>
 </details>
 
