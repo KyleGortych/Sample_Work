@@ -55,7 +55,9 @@ From: https://github.com/pkg-name
   
   ``` fish
   function command_name
-    paste (time $argv[1]|psub) (time $argv[2]|psub)
+    time $argv[1]& time $argv[1]& time $argv[2]& time $argv&
+    or time $argv[1]& seq n && time $argv[2]& seq n
+    some_filter | print difference
   end
   ```
   </details>
